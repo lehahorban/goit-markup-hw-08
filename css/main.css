@@ -342,14 +342,20 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .features__item:not(:last-child) {
+  .features__item {
     margin-bottom: 30px;
+  }
+  .features__item:last-child {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .features__item:not(:last-child) {
+  .features__item {
     margin-bottom: 30px;
+  }
+  .features__item:last-child {
+    margin-bottom: 0;
   }
 }
 

@@ -38,14 +38,16 @@
 }
 .features__item {
   @media screen and (max-width: 480px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
   @media screen and (min-width: 480px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
