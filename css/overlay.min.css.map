@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,AAAC,CACP,SAAS,CAAE,MAAM,CACjB,MAAM,CAAE,KAAK,CACb,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,CAClB,gBAAgB,CAAE,uDAA6D,CAC7E,4BAA4B,CAC9B,mBAAmB,CAAE,MAAM,CAC3B,iBAAiB,CAAE,SAAS,CAC5B,eAAe,CAAE,KAAK,CACvB",
+    "sources": [
+        "../sass/layout/overlay.scss"
+    ],
+    "names": [],
+    "file": "overlay.min.css"
+}

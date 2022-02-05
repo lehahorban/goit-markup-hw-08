@@ -1,0 +1,106 @@
+.features {
+  background-color: var(--background-item-color);
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
+
+.features__box:not(:first-child) {
+  margin-left: 30px;
+}
+
+.features__box-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
+.features__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-bottom: 0;
+  }
+}
+.features__item {
+  @media screen and (max-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin: 15px;
+    margin-bottom: 0;
+  }
+}
+// // .features__item:not(:last-child) {
+// //   // margin-right: 30px;
+// //   margin-bottom: 30px;
+// }
+
+.features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+  text-transform: uppercase;
+  text-align: center;
+  // width: 270px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+.features-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  // width: 270px;
+  margin-top: 10px;
+}
+
+.master-card__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}
