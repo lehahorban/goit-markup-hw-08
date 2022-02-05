@@ -1,5 +1,17 @@
 .subscription {
-  margin-left: auto;
+  // margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-top: 0;
+  }
 }
 
 .subscription-title {
