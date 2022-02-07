@@ -1299,6 +1299,12 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 360px) {
+  .footer-form {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-form {
     display: flex;
@@ -1334,6 +1340,12 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   outline: none;
+}
+
+@media screen and (max-width: 360px) {
+  .footer-form__mail {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
