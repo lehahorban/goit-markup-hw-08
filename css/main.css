@@ -1113,10 +1113,33 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 480px) {
+  .main-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .main-link {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-link {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-link {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1126,10 +1149,27 @@ body {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 480px) {
+  .main-button:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+}
+
 @media screen and (min-width: 480px) {
-  .main-button {
-    display: flex;
-    flex-wrap: wrap;
+  .main-button:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-button:nth-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-button:nth-child(-n + 3) {
+    margin-bottom: 0px;
   }
 }
 
