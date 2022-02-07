@@ -1,3 +1,7 @@
+.header__portfolio {
+  border: 1px solid #ececec;
+}
+
 .main-list {
   list-style: none;
   // display: flex;
@@ -57,8 +61,24 @@
 }
 
 .main-link {
+  display: flex;
+  justify-content: center;
   list-style: none;
   margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-button {
+  display: flex;
+  text-align: center;
+  margin-right: 8px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .mains-btn {
   background-color: var(--accent-color);
@@ -124,14 +144,4 @@
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   margin-top: 4px;
-}
-.main-link {
-  display: flex;
-  justify-content: center;
-}
-
-.main-button {
-  display: flex;
-  text-align: center;
-  margin-right: 8px;
 }
