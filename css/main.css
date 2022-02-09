@@ -1551,6 +1551,9 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden .modal {
@@ -1563,13 +1566,9 @@ body {
 }
 
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  position: relative;
   padding: 40px;
-  transform: translate(-50%, -50%) scale(1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 90vw;
   min-height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1578,12 +1577,31 @@ body {
 
 @media screen and (min-width: 480px) {
   .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 450px;
+    height: auto;
+    transform: translate(-50%, -47%) scale(1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: auto;
+    transform: translate(-50%, -47%) scale(1);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     width: 528px;
   }
 }
