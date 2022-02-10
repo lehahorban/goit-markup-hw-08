@@ -275,6 +275,10 @@ body {
   }
 }
 
+.container {
+  position: relative;
+}
+
 .menu-open-btn {
   position: absolute;
   top: 10px;
